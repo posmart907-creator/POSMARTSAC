@@ -47,8 +47,9 @@
     inset:0;
     background-image: url('fachada.jpg');
     background-size: cover;
-    background-position: center 30%;
-    filter: saturate(1.05);
+    background-position: center 22%;
+    background-repeat: no-repeat;
+    filter: saturate(1.08) brightness(1.12) contrast(1.03);
     z-index:0;
   }
 
@@ -57,7 +58,15 @@
     position:absolute;
     inset:0;
     background:
-      linear-gradient(180deg, rgba(15,8,6,0.55) 0%, rgba(15,8,6,0.35) 30%, rgba(10,6,5,0.78) 70%, rgba(6,3,2,0.94) 100%);
+      linear-gradient(180deg, rgba(15,8,6,0.18) 0%, rgba(15,8,6,0.1) 28%, rgba(10,6,5,0.42) 68%, rgba(6,3,2,0.68) 100%);
+  }
+
+  @media (max-width: 560px){
+    .bg{
+      background-size: contain;
+      background-position: top center;
+      background-color: #8a1a1d;
+    }
   }
 
   .wrap{
